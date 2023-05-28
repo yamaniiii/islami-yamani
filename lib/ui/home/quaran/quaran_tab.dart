@@ -123,8 +123,11 @@ class QuaranTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(
-          "assets/images/Screenshot (1).png",
+        Expanded(
+          flex: 1,
+          child: Image.asset(
+            "assets/images/Screenshot (1).png",
+          ),
         ),
         Container(
           width: double.infinity,
@@ -143,6 +146,7 @@ class QuaranTab extends StatelessWidget {
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(
+          flex: 2,
           child: ListView.separated(
             itemBuilder: (context, index) {
               return VerseNameWidget(
