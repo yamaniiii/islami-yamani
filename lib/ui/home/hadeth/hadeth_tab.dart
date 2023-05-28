@@ -8,7 +8,7 @@ class HadethTab extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          "assets/images/hadeth_header_image.png",
+          "assets/images/hadeth_header_image.png", alignment: Alignment.,
         ),
       ],
     );
