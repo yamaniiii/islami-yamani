@@ -22,6 +22,7 @@ class MyApplication extends StatelessWidget {
       },
       theme: MyThemeData.LightTheme,
       darkTheme: MyThemeData.DarkTheme,
+      themeMode: MyThemeData.themeMode,
     );
   }
 }

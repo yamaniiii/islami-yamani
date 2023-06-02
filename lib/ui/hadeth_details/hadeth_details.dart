@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../home/hadeth/Hadeth.dart';
+import '../my_theme_data.dart';
 
 class HadethDetailsScreen extends StatelessWidget {
   static const String routeName = "hadeth_details";
@@ -12,7 +13,11 @@ class HadethDetailsScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/bg3.png'),
+          image: AssetImage(
+            MyThemeData.themeMode == ThemeMode.light
+                ? 'assets/images/bg3.png'
+                : 'assets/images/dark_main_background.png',
+          ),
           fit: BoxFit.fill,
         ),
       ),

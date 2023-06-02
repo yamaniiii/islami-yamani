@@ -132,17 +132,17 @@ class QuaranTab extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 1.5,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
           "Verse Name",
-          style: TextStyle(fontSize: 25),
+          style: Theme.of(context).textTheme.headline5,
         ),
         Container(
           width: double.infinity,
           height: 1.5,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(
@@ -157,8 +157,8 @@ class QuaranTab extends StatelessWidget {
             itemCount: names.length,
             separatorBuilder: (BuildContext context, int index) {
               return Container(
-                color: Theme.of(context).primaryColor,
-                margin: EdgeInsets.symmetric(vertical: 1.5),
+                color: Theme.of(context).accentColor,
+                margin: EdgeInsets.symmetric(vertical: 3, horizontal: 46),
                 height: 1,
                 width: double.infinity,
               );

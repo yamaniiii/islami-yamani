@@ -27,7 +27,7 @@ class _HadethTabState extends State<HadethTab> {
         Container(
           width: double.infinity,
           height: 1.5,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
@@ -37,7 +37,7 @@ class _HadethTabState extends State<HadethTab> {
         Container(
           width: double.infinity,
           height: 1.5,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(
@@ -54,8 +54,9 @@ class _HadethTabState extends State<HadethTab> {
                     itemCount: allHadethList.length,
                     separatorBuilder: (BuildContext context, int index) {
                       return Container(
-                        color: Theme.of(context).primaryColor,
-                        margin: EdgeInsets.symmetric(vertical: 1.5),
+                        color: Theme.of(context).accentColor,
+                        margin:
+                            EdgeInsets.symmetric(vertical: 3, horizontal: 46),
                         height: 1,
                         width: double.infinity,
                       );
