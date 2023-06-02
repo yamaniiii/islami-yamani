@@ -7,7 +7,7 @@ class HadethDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var args = ModalRoute.of(context)!.settings.arguments as Hadeth;
+    var args = ModalRoute.of(context)?.settings.arguments as Hadeth;
 
     return Container(
       decoration: BoxDecoration(

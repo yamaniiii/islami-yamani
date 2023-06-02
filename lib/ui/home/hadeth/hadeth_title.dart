@@ -12,7 +12,7 @@ class HadethTitleWidget extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.pushNamed(context, HadethDetailsScreen.routeName,
-            arguments: Hadeth);
+            arguments: hadeth);
       },
       child: Container(
         alignment: Alignment.center,
