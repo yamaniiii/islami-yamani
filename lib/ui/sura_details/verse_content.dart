@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class VerseContent extends StatelessWidget {
+ class VerseContent extends StatelessWidget {
   String content;
 
   VerseContent(this.content) {}
@@ -13,9 +12,7 @@ class VerseContent extends StatelessWidget {
       child: Text(
         content,
         textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 24,
-        ),
+        style: Theme.of(context).textTheme.bodyText2,
       ),
     );
   }
