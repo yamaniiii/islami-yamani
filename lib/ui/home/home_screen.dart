@@ -3,6 +3,7 @@ import 'package:islamii/ui/home/quaran/quaran_tab.dart';
 import 'package:islamii/ui/home/radio/radio_tab.dart';
 import 'package:islamii/ui/home/tasbeh/tasbeh_tab.dart';
 
+import '../my_theme_data.dart';
 import 'hadeth/hadeth_tab.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,7 +22,9 @@ class _HomeScreenState extends State<HomeScreen> {
       decoration: BoxDecoration(
         image: DecorationImage(
             image: AssetImage(
-              'assets/images/bg3.png',
+              MyThemeData.themeMode == ThemeMode.light
+                  ? 'assets/images/bg3.png'
+                  : 'assets/images/dark_main_background.png',
             ),
             fit: BoxFit.fill),
       ),
