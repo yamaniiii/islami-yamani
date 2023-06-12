@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islamii/ui/home/quaran/verse_name.dart';
 
 class QuaranTab extends StatelessWidget {
@@ -136,7 +137,7 @@ class QuaranTab extends StatelessWidget {
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
-          "Verse Name",
+          AppLocalizations.of(context)!.chapter_Name,
           style: Theme.of(context).textTheme.headline5,
         ),
         Container(

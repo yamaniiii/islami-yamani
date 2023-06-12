@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:islamii/ui/my_theme_data.dart';
+import 'package:provider/provider.dart';
 
+import '../../provider/settings_provider.dart';
 import '../home/home_screen.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -10,6 +11,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<SettingsProvider>(context);
     Future.delayed(
       Duration(seconds: 2),
       () {
@@ -19,7 +21,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Image.asset(
-          MyThemeData.themeMode == ThemeMode.light
+          provider.themeMode == ThemeMode.light
               ? 'assets/images/splash.png'
               : 'assets/images/dark_splash_background.png',
           height: double.infinity,

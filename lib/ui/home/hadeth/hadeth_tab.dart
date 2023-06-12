@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islamii/ui/home/hadeth/Hadeth.dart';
 import 'package:islamii/ui/home/hadeth/hadeth_title.dart';
 
@@ -31,7 +32,7 @@ class _HadethTabState extends State<HadethTab> {
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
-          "Hadeth Number",
+          AppLocalizations.of(context)!.hadeth_num,
           style: TextStyle(fontSize: 25),
         ),
         Container(
@@ -82,7 +83,7 @@ class _HadethTabState extends State<HadethTab> {
       Hadeth hadeth = Hadeth(title, content);
       hadethList.add(hadeth);
     }
-    await Future.delayed(Duration(seconds: 0));
+    await Future.delayed(Duration(seconds: 1));
     allHadethList = hadethList;
     setState(() {});
   }
