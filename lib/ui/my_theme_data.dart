@@ -20,7 +20,7 @@ class MyThemeData {
         elevation: 0,
         centerTitle: true,
         titleTextStyle: TextStyle(
-          color: LightMainTextColor,
+          color: DarkMainTextColor,
           fontSize: 30,
         ),
         iconTheme: IconThemeData(color: Colors.black)),
@@ -34,19 +34,17 @@ class MyThemeData {
         fontSize: 32,
         color: LightMainTextColor,
       ),
-      headline5: TextStyle(
-        fontSize: 24,
-        color: LightMainTextColor,
-      ),
-      bodyText1: TextStyle(
-        fontSize: 20,
-        color: LightMainTextColor,
-      ),
-      bodyText2: TextStyle(
-        fontSize: 24,
-        color: LightMainTextColor,
-      ),
+      headline5: TextStyle(fontSize: 24, color: LightMainTextColor),
+      bodyText1: TextStyle(fontSize: 20, color: LightMainTextColor),
+      bodyText2: TextStyle(fontSize: 24, color: LightMainTextColor),
     ),
+    bottomSheetTheme: const BottomSheetThemeData(
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+          topRight: Radius.circular(14),
+          topLeft: Radius.circular(14),
+        ))),
   );
   static var DarkTheme = ThemeData(
     progressIndicatorTheme: const ProgressIndicatorThemeData(
@@ -88,6 +86,12 @@ class MyThemeData {
         color: DarkMainTextColor,
       ),
     ),
+    bottomSheetTheme: const BottomSheetThemeData(
+        backgroundColor: DarkPrimaryColor,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+          topRight: Radius.circular(14),
+          topLeft: Radius.circular(14),
+        ))),
   );
-  static ThemeMode themeMode = ThemeMode.dark;
 }
